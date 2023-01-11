@@ -1,3 +1,4 @@
+import "./scss/style.scss";
 import Button from "./components/button/Button";
 import Image from "./components/image/image";
 

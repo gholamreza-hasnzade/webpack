@@ -1,4 +1,3 @@
-import "./button.scss";
 
 class Button {
     render() {
