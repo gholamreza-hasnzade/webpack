@@ -1,0 +1,12 @@
+.btn-dark {
+    color: #fff;
+    background-color: #171a1d;
+    padding: 10px 15px;
+    border: unset;
+    outline: unset;
+}
+
+.text-info {
+    color: #10707f;
+    font-weight: 700;
+}
