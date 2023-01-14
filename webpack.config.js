@@ -25,6 +25,11 @@ module.exports = {
             {
                 test: /\.(eot|ttf|woff|woff2)$/i,
                 type: "asset/inline",
+            },
+            {
+                test: /\.m?js$/i,
+                exclude: /(node_modules|bower_components)/,
+                use: ['babel-loader'],
             }
         ],
     },

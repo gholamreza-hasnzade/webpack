@@ -686,24 +686,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-
-class Button {
-    render() {
-        const button = document.createElement("button");
-        button.innerHTML = "ثبت";
-        button.classList.add("btn-dark")
-        const body = document.querySelector("body");
-        body.appendChild(button);
-        button.onclick = () => {
-            const p = document.createElement("p");
-            p.innerHTML = "this is test";
-            p.classList.add("text-info")
-            body.appendChild(p);
-        };
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Button = /*#__PURE__*/function () {
+  function Button() {
+    _classCallCheck(this, Button);
+  }
+  _createClass(Button, [{
+    key: "render",
+    value: function render() {
+      var button = document.createElement("button");
+      button.innerHTML = "ثبت";
+      button.classList.add("btn-dark");
+      var body = document.querySelector("body");
+      body.appendChild(button);
+      button.onclick = function () {
+        var p = document.createElement("p");
+        p.innerHTML = "this is test";
+        p.classList.add("text-info");
+        body.appendChild(p);
+      };
     }
-}
+  }]);
+  return Button;
+}();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
-
 
 /***/ }),
 /* 34 */
@@ -714,21 +725,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _webpack_image_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
-
-class Image {
-    render() {
-        const $ = document;
-        const img = $.createElement("img");
-        img.alt = "webpack iamge";
-        img.src = _webpack_image_png__WEBPACK_IMPORTED_MODULE_0__;
-        img.width = 450;
-        const body = $.querySelector("body");
-        body.appendChild(img);
+var Image = /*#__PURE__*/function () {
+  function Image() {
+    _classCallCheck(this, Image);
+  }
+  _createClass(Image, [{
+    key: "render",
+    value: function render() {
+      var $ = document;
+      var img = $.createElement("img");
+      img.alt = "webpack iamge";
+      img.src = _webpack_image_png__WEBPACK_IMPORTED_MODULE_0__;
+      img.width = 450;
+      var body = $.querySelector("body");
+      body.appendChild(img);
     }
-}
+  }]);
+  return Image;
+}();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Image);
-
 
 /***/ }),
 /* 35 */
@@ -881,13 +903,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-const button = new _components_button_Button__WEBPACK_IMPORTED_MODULE_1__["default"]();
-const image = new _components_image_image__WEBPACK_IMPORTED_MODULE_2__["default"]();
-
+var button = new _components_button_Button__WEBPACK_IMPORTED_MODULE_1__["default"]();
+var image = new _components_image_image__WEBPACK_IMPORTED_MODULE_2__["default"]();
 button.render();
 image.render();
-
 })();
 
 /******/ })()
